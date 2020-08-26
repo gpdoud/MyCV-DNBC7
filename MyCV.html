@@ -3,70 +3,75 @@
 
 <head>
     <title>MyCV</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <link href="css/master.css" type="text/css" rel="stylesheet"> -->
-    <!-- <link href="css/MyCV.css" type="text/css" rel="stylesheet"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link href="css/master.css" type="text/css" rel="stylesheet"> 
+    <link href="css/MyCV.css" type="text/css" rel="stylesheet"> -->
 </head>
 
-<body>
+<body class="m-3">
     <section>
-        <address>
-            <span class="name">Greg Doud</span><br>
-            <span class="address">4900 Parkway Dr.</span><br>
-            <span class="citystzip">Mason, OH 45040</span>
+        <address class="font-italic">
+            <span class="text-dark h3">Gregory Doud</span> |
+            <span class="">4900 Parkway Dr.</span> |
+            <span class="">Mason, OH 45040</span> |
+            <span class="">513-322-8888</span> |
+            <span class="">gdoud@maxtrain.com</span>
         </address>
     </section>
     <section>
         <h3>List of Technologies</h3>
-        <table id="tech" class="table table-borderless table-sm">
-            <tr>
-                <td>Git/GitHub</td>
-                <td class="bold">SQL</td>
-                <td class="bold">C#</td>
-                <td>Stored Procedures</td>
-            </tr>
-            <tr>
-                <td>EntityFramework</td>
-                <td>MVC</td>
-                <td>WebApi</td>
-                <td>Typescript</td>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>CSS</td>
-                <td>JS</td>
-                <td>Postman</td>
-            </tr>
-            <tr>
-                <td>BS</td>
-                <td>JQ</td>
-                <td class="bold">Angular</td>
-                <td>.Net Core 2.2</td>
-            </tr>
-        </table>
+        <div class="table-responsive-sm">
+            <div class="row">
+                <div class="col">Git/GitHub</div>
+                <div class="col">SQL</div>
+                <div class="col">C#</div>
+                <div class="col">Stored Procedures</div>
+            </div>
+            <div class="row">
+                <div class="col">EntityFramework</div>
+                <div class="col">MVC</div>
+                <div class="col">WebApi</div>
+                <div class="col">Typescript</div>
+            </div>
+            <div class="row">
+                <div class="col">HTML</div>
+                <div class="col">CSS</div>
+                <div class="col">JS</div>
+                <div class="col">Postman</div>
+            </div>
+            <div class="row">
+                <div class="col">BS</div>
+                <div class="col">JQ</div>
+                <div class="col">Angular</div>
+                <div class="col">.Net Core 3.1</div>
+            </div>
+        </div>
 
-    </section>
-    <section>
-        <h3>Career Goals</h3>
-        <p>To be a boot camp instructor</p>
     </section>
     <section>
         <h3>Work Experience</h3>
         <ul>
             <li>
-                <span class="font-weight-bold">Senior Instructor</span>
-                <span class="font-italic">MAX Technical Training</span>
+                <span class="font-weight-bold">Senior Instructor,</span>
+                <span class="">MAX Technical Training,</span>
+                <span class="font-italic">Mason, OH,</span>
                 <span class="">(2017-Present)</span>
                 <ul>
-                    <li>Taught multiple boot camps</li>
-                    <li>Created new Net curriculum</li>
-                    <li>Taught stand-along Angular class</li>
+                    <li>Taught multiple boot camps using both .Net and Java technologies.</li>
+                    <li>Modified all the boot camp curriculum adding the technology based on
+                        feedback from the business community. The new curriculum included: JSON
+                        services and Angular.
+                    </li>
+                    <li>Created the curriculum and taught a stand-alone, four day Angular class</li>
                 </ul>
             </li>
             <li>
-                <span class="font-weight-bold">Instructor</span>
-                <span class="font-italic">The Iron Yard</span>
+                <span class="font-weight-bold">Instructor,</span>
+                <span class="">The Iron Yard,</span>
+                <span class="font-italic">Greenville, SC,</span>
                 <span class="">(2016-2017)</span>
                 <ul>
                     <li>Taught multiple boot camps</li>
@@ -77,7 +82,7 @@
         </ul>
     </section>
     <section>
-        <h3>Work Experience</h3>
+        <h3>Education</h3>
         <ul>
             <li>
                 <span class="font-weight-bold">Athenaeum of Ohio</span>
@@ -94,6 +99,21 @@
             </li>
         </ul>
     </section>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">2</button>
+      
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Dropdown link</a>
+            <a class="dropdown-item" href="#">Dropdown link</a>
+          </div>
+        </div>
+      </div>
+    <button class="btn btn-danger">This button face is red</button>
 </body>
 
 </html>

@@ -10,8 +10,11 @@ table#tech1 tr td {
     width: 25%;
     text-align: center;
 }
-.bold {
+.font-weight-bold {
     font-weight: bold;
+}
+.font-italic {
+    font-style: italic;
 }
 table#tech1, tr, td {
     border: 1px solid silver;
